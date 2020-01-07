@@ -33,8 +33,8 @@ public class Mario extends Actor
                 if(Greenfoot.isKeyDown("up"))
                 {
                     speed = - 27;
-                    //GreenfootSound wind = new GreenfootSound("jump.mp3");
-                    //wind.play();               
+                    GreenfootSound wind = new GreenfootSound("jump.mp3");
+                    wind.play();               
                 }
             }
         }
