@@ -8,12 +8,24 @@ import greenfoot.*;
  */
 public class Floor extends Actor
 {
+    
+    public int height, width;
     /**
      * Act - do whatever the Floor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+   
+    
+    
     public void act() 
     {
         // Add your action code here.
-    }    
+    } 
+    
+    protected void addedToWorld(World world){
+        height = getWorld().getHeight();
+        width = getWorld().getWidth();
+        getImage().scale(150, 25);
+
+    }
 }

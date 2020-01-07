@@ -16,8 +16,8 @@ public class BackGround1 extends World
     public BackGround1()
     {    
         super(800, 600, 1); 
-        addObject(new DK(), 200, 150);
-        addObject(new Floor(), 125, 219);
+        addObject(new DK(), 75, 160);
+        addObject(new Floor(), 75, 219);
         addObject(new Floor(), 375, 219);
         addObject(new Floor(), 625, 219);
         addObject(new Floor(), 875, 219);
@@ -35,10 +35,10 @@ public class BackGround1 extends World
         addObject(new Floor2(), 875, 1000);
         addObject(new Floor2(), 1125, 1000);
         addObject(new Floor2(), 1375, 1000);
-        addObject(new Mario(), 125, 940);
-        addObject(new red() ,1200 ,50);
-        addObject(new red() ,1225 ,50);
-        addObject(new red() ,1250 ,50);
+        addObject(new Mario(), 70, 550);
+        addObject(new red() ,750 ,50);
+        addObject(new red() ,700 ,50);
+        addObject(new red() ,650 ,50);
 
     }
 }
