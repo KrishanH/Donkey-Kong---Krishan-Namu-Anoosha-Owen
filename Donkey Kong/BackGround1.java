@@ -15,7 +15,7 @@ public class BackGround1 extends World
      */
     public BackGround1()
     {    
-        super(1300, 800, 1); 
+        super(800, 600, 1); 
         addObject(new DK(), 200, 150);
         addObject(new Floor(), 125, 219);
         addObject(new Floor(), 375, 219);
