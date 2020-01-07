@@ -6,7 +6,7 @@ public class Mario extends Actor
     String Marioimage = "mariopixelCopy.png";
     long lastTime;
     int Lives = 3;
-    private GreenfootSound jump;
+    //private GreenfootSound jump;
 
     public void act() 
     {
@@ -33,8 +33,8 @@ public class Mario extends Actor
                 if(Greenfoot.isKeyDown("up"))
                 {
                     speed = - 27;
-                    GreenfootSound wind = new GreenfootSound("jump.mp3");
-                    wind.play();               
+                    //GreenfootSound wind = new GreenfootSound("jump.mp3");
+                    //wind.play();               
                 }
             }
         }
