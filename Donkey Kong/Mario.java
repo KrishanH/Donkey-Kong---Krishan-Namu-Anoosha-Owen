@@ -1,9 +1,11 @@
 
 import greenfoot.*;
+
 public class Mario extends Actor
 {
     int speed;
     String Marioimage = "mariopixelCopy.png";
+    GifImage marioRunning = new GifImage("mariorunning.gif");//testing
     long lastTime;
     int Lives = 4;
     int pause = 10;
@@ -71,9 +73,12 @@ public class Mario extends Actor
             } */
 
             setImage("mariopixelCopy.png");
+            //getImage().scale(30,30);
+            
             while(isTouching(Floor.class))
             {
                 move(1);
+                
             } 
             } 
         
@@ -82,12 +87,14 @@ public class Mario extends Actor
             {
                 move(3);
                 setImage("mariopixel.png");
+                //getImage().scale(30,30);
                 while(isTouching(Floor.class))
                 {
                     move(-1);
                 }
             } else{
                 setImage("mario-big.png");
+                //getImage().scale(30,30);
             }
         }
         if(Greenfoot.isKeyDown("down"))
