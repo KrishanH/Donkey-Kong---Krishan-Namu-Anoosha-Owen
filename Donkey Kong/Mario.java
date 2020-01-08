@@ -6,21 +6,29 @@ public class Mario extends Actor
     String Marioimage = "mariopixelCopy.png";
     long lastTime;
     int Lives = 4;
+    int pause = 10;
+    GreenfootSound death = new GreenfootSound("deathSound.mp3");
     //private GreenfootSound jump;
 
     public void act() 
     {
         speed = speed + 1;
         setLocation( getX(), getY() + speed);
+        if(this.getY() > 550){
+            Lives = 0;
+        }
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
             getWorld().removeObjects(getWorld().getObjects(red.class));            
             Lives = Lives - 1;
         }
+        
         if(Lives == 0)
         {
-            Greenfoot.setWorld(new endscreen());
+               death.play();
+        Greenfoot.delay(110);
+        Greenfoot.setWorld(new endscreen());
             Greenfoot.stop();
         }
         if(speed > 0)
@@ -31,7 +39,7 @@ public class Mario extends Actor
                 setLocation(getX(), getY() - 1);
                 if(Greenfoot.isKeyDown("up"))
                 {
-                    speed = - 27;
+                    speed = - 20;
                     GreenfootSound wind = new GreenfootSound("jump.mp3");
                     wind.play();               
                 }
@@ -47,7 +55,7 @@ public class Mario extends Actor
         }    
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-5);
+            move(-3);
             /*if(System.currentTimeMillis() - lastTime > 500 && Marioimage.equals("mariopixelCopy.png"))
             {
             Marioimage = "marioleft.png";
@@ -72,7 +80,7 @@ public class Mario extends Actor
         else {
             if(Greenfoot.isKeyDown("right"))
             {
-                move(5);
+                move(3);
                 setImage("mariopixel.png");
                 while(isTouching(Floor.class))
                 {
