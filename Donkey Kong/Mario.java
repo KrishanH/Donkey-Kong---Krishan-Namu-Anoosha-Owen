@@ -12,7 +12,6 @@ public class Mario extends Actor
     {
         speed = speed + 1;
         setLocation( getX(), getY() + speed);
-        getWorld().showText("Lives : "+ Lives +"",1450, 50);
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
