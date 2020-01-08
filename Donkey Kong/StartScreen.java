@@ -23,6 +23,7 @@ public class StartScreen extends World
         setBackground(d);
 
         addObject(new button(), 635, 500);
+        addObject(new ibutton(), 635 ,600);
 
 
     }
