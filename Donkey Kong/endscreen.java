@@ -16,7 +16,7 @@ public class endscreen extends World
     public endscreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1300, 800, 1); 
-        addObject(new back(), 1300/2 , 800/2);
+        super(600, 800, 1); 
+        addObject(new back(), 600/2 , 800/2);
     }
 }

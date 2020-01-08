@@ -6,11 +6,11 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Floor2 extends Floor
+public class Floor3 extends Floor
 {
-    private int down = 5;   
-    private int up = -3;  
-    private int falling = 3;
+    private int down = 2;   
+    private int up = -2;  
+    private int falling = 1;
     /**
      * Act - do whatever the Floor2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -51,12 +51,12 @@ public class Floor2 extends Floor
     }
 
     public void checkIfTouching(){
-       //if(getY() < 155){
-           //falling = 1;
-        //}
-      // if(getY() > 400){
-       //   falling = 0;  
-        //}
+       if(getY() < 155){
+           falling = 1;
+        }
+       if(getY() > 350){
+          falling = 0;  
+        }
     //if(getY() < getWorld().getHeight() - 10)
     //{
     //falling = 0 ; 
@@ -68,4 +68,3 @@ public class Floor2 extends Floor
     }
      
 }
- 

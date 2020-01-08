@@ -20,11 +20,17 @@ public class Barrel extends Actor
             setLocation(getX() - 3, getY() - 3);
             turn(-8);
           }
+          while(isTouching(Floor3.class))
+          {
+            setLocation(getX() - 3, getY() - 2);
+            turn(-8);
+          }
           while(isTouching(Floor.class))
           {
             setLocation(getX() + 3, getY() - 3);
             turn(8);
           }
+          
        }
     }
 }

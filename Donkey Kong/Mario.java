@@ -67,7 +67,9 @@ public class Mario extends Actor
             {
                 move(1);
             } 
-        } else {
+            } 
+        
+        else {
             if(Greenfoot.isKeyDown("right"))
             {
                 move(5);
