@@ -35,6 +35,5 @@ public class BackGround1 extends World
         addObject(new red() ,750 ,50);
         addObject(new red() ,700 ,50);
         addObject(new red() ,650 ,50);
-
     }
 }
