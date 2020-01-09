@@ -15,6 +15,11 @@ public class info extends World
      * Constructor for objects of class info.
      * 
      */
+    public void act(){
+    if(Greenfoot.isKeyDown("up")){
+        Greenfoot.setWorld(new BackGround1());
+    }
+}
     public info()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
