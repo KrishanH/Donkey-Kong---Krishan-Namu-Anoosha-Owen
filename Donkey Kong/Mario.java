@@ -31,7 +31,7 @@ public class Mario extends Actor
                death.play();
         Greenfoot.delay(110);
         Greenfoot.setWorld(new endscreen());
-            Greenfoot.stop();
+           // Greenfoot.stop();
         }
         if(speed > 0)
         {
@@ -99,7 +99,7 @@ public class Mario extends Actor
         }
         if(Greenfoot.isKeyDown("down"))
         {
-            speed = 50;
+            speed = 20;
         }
     } 
 }

@@ -8,7 +8,7 @@ public class DK extends Actor
         {
             Greenfoot.setWorld(new Finish());
 
-            Greenfoot.stop();
+            //Greenfoot.stop();
         }
         if(System.currentTimeMillis() - lastTime > 5000)
         {

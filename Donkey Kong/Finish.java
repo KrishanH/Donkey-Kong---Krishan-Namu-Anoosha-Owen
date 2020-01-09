@@ -27,4 +27,9 @@ public class Finish extends World
         addObject(new Mario(), 400, 255);
         showText("YOU WIN", 400, 100);
     }
+        public void act(){
+    if(Greenfoot.isKeyDown("up")){
+        Greenfoot.setWorld(new BackGround2());
+    }
+}
 }
