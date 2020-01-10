@@ -10,6 +10,12 @@ public class DK extends Actor
 
             //Greenfoot.stop();
         }
+        if(isTouching(Namu.class))
+        {
+            Greenfoot.setWorld(new Finish());
+
+            //Greenfoot.stop();
+        }
         if(System.currentTimeMillis() - lastTime > 5000)
         {
             lastTime = System.currentTimeMillis();

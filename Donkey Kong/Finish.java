@@ -29,7 +29,7 @@ public class Finish extends World
     }
         public void act(){
     if(Greenfoot.isKeyDown("up")){
-        Greenfoot.setWorld(new BackGround2());
+        Greenfoot.setWorld(new lvl2());
     }
 }
 }
