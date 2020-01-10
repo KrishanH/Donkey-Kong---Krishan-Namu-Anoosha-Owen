@@ -17,12 +17,12 @@ public class StartScreen extends World
     public StartScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1300,800,1);
+        super(800,600,1);
         GreenfootImage d = new GreenfootImage("donkey.jpg");
         d.scale(getWidth(), getHeight());
         setBackground(d);
 
-        addObject(new button(), 635, 500);
+        addObject(new button(), 400, 300);
         addObject(new ibutton(), 635, 700);
 
     }
