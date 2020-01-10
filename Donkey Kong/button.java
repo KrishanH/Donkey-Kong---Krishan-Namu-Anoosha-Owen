@@ -12,6 +12,7 @@ public class button extends Actor
      * Act - do whatever the button wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public static int namu = 4;
     public void act() 
     {
         // Add your action code here.
@@ -20,6 +21,25 @@ public class button extends Actor
         {
             Greenfoot.setWorld(new BackGround1());
         }
-        
+        if(Greenfoot.isKeyDown("n"))
+        {
+            
+            namu = 1;
+            if(Greenfoot.isKeyDown("a"))
+            {
+               
+                    namu=2;
+                if(Greenfoot.isKeyDown("m"))
+                {
+                    namu=3;
+
+                    if(Greenfoot.isKeyDown("u"))
+                    {
+                        namu=4;
+                    }
+                }
+            }
+        }
+
     }    
 }
