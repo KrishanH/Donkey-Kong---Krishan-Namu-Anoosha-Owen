@@ -35,6 +35,7 @@ public class BackGround1 extends World
         addObject(new Floor(), 600+75 , 545);
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
+        Mario.Lives = 3;
 
         showText(button.namu +" ", 400, 300);
         if(button.namu == 4){
