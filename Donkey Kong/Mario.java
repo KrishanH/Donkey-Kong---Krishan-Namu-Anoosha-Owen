@@ -3,11 +3,12 @@ import greenfoot.*;
 
 public class Mario extends Actor
 {
+    public static int Lives = 3;
+    public static boolean injured = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
     GifImage marioRunning = new GifImage("mariorunning.gif");//testing
     long lastTime;
-    int Lives = 4;
     int pause = 10;
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
     //private GreenfootSound jump;
@@ -22,8 +23,7 @@ public class Mario extends Actor
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            getWorld().removeObjects(getWorld().getObjects(red.class));            
-            Lives = Lives - 1;
+            injured = true;
         }
         
         if(Lives == 0)
