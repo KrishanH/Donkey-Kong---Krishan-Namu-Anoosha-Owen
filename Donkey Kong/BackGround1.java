@@ -24,9 +24,10 @@ public class BackGround1 extends World
         addObject(new Floor3(), 450+75+150, 350);
         addObject(new Floor2(), 525, 350);
         //addObject(new Floor2(), 800-300-75, 350);
-        addObject(new Floor(), 320, 450);
+        addObject(new Floor2(), 325, 438);
         //addObject(new Floor(), 75, 545);
         //addObject(new Floor(), 150+75 , 545);
+        addObject(new Floor(), 150+75 , 545);
         addObject(new Floor(), 300+75 , 545);
         addObject(new Floor(), 450+75 , 545);
         addObject(new Floor(), 600+75 , 545);

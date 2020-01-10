@@ -16,7 +16,12 @@ public class endscreen extends World
     public endscreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 800, 1); 
+        super(800, 600, 1); 
         addObject(new back(), 600/2 , 800/2);
     }
+        public void act(){
+    if(Greenfoot.isKeyDown("up")){
+        Greenfoot.setWorld(new BackGround1());
+    }
+}
 }
