@@ -2,21 +2,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Namu extends Actor
 {
     int speed;
-    
+    private GifImage gif = new GifImage("namuRight.gif");
+    private GifImage gif2 = new GifImage("namuLeft.gif");
+    private int hurt = 0;
     public void act() 
     {
         speed = speed + 1;
         setLocation( getX(), getY() + speed);
+
+        setImage("namuStand.png");
         if(this.getY() > 550){
             setLocation(600, 500);
             //getWorld().removeObjects(getWorld().getObjects(Namu.class));
         }
-          if(isTouching(Barrel.class))
+        if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            getWorld().addObject(new Namu(), 500, 600);  
+            hurt++;
         }
-                if(speed > 0)
+        if(hurt > 3){
+            setLocation(600, 500);
+        }
+        if(speed > 0)
         {
             while(isTouching(Floor.class))
             {
@@ -38,28 +45,27 @@ public class Namu extends Actor
                 setLocation(getX(), getY() + 1);
             }
         }
-                if(Greenfoot.isKeyDown("a"))
+        if(Greenfoot.isKeyDown("a"))
         {
+            setImage(gif.getCurrentImage());
             move(-3);
-            //setImage("mariopixelCopy.png");
             while(isTouching(Floor.class))
             {
                 move(1);
-                
+
             } 
-            } 
-                else {
+        } 
+        else {
             if(Greenfoot.isKeyDown("d"))
             {
                 move(3);
-                //setImage("mariopixel.png");
-                //getImage().scale(30,30);
+                setImage(gif2.getCurrentImage());
                 while(isTouching(Floor.class))
                 {
                     move(-1);
                 }
             } else{
-                //setImage("mario-big.png");
+                setImage("namuStand.png");
                 //getImage().scale(30,30);
             }
         }
