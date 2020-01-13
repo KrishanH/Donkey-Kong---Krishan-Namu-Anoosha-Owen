@@ -10,17 +10,6 @@ public class lvl3 extends World
 {
     long lastTime;
 
-    /*
-    int actcount = 0;
-    public void createmush(int fallTime)     //This method creates a ball after a delay of "fallTime".
-    {
-    if(actcount>fallTime)
-    {
-    mushroom mush = new mushroom();
-    addObject(mush,200, 0);
-    }
-    }
-     */
     
     public lvl3()
     {    
