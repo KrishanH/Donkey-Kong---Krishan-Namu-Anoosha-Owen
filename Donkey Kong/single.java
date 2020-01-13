@@ -17,7 +17,7 @@ public class single extends Actor
         // Add your action code here.
         if (Greenfoot.mousePressed(this))
         {
-            Greenfoot.setWorld(new BackGround2());
+            Greenfoot.setWorld(new selectlvlsingle());
         }
         
     }    
