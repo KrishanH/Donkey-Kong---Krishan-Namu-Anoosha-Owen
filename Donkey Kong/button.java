@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class button extends Actor
 {
+    public button()
+    {    
+        GreenfootImage image = getImage();  
+        image.scale(200, 100);
+        setImage(image);
+    }
+    
     /**
      * Act - do whatever the button wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -19,7 +26,7 @@ public class button extends Actor
         setLocation( getX(), getY());
         if (Greenfoot.mousePressed(this))
         {
-            Greenfoot.setWorld(new BackGround1());
+            Greenfoot.setWorld(new player());
         }
         if(Greenfoot.isKeyDown("n"))
         {

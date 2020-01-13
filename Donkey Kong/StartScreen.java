@@ -22,8 +22,8 @@ public class StartScreen extends World
         d.scale(getWidth(), getHeight());
         setBackground(d);
 
-        addObject(new button(), 400, 300);
-        addObject(new ibutton(), 635, 700);
+        addObject(new button(), 400, 400);
+        addObject(new ibutton(), 400, 500);
 
     }
 }

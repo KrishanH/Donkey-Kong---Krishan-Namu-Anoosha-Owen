@@ -5,6 +5,7 @@ public class Mario extends Actor
 {
     public static int Lives = 3;
     public static boolean injured = false;
+    public static boolean health = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
     GifImage marioRunning = new GifImage("mariorunning.gif");//testing
@@ -25,13 +26,19 @@ public class Mario extends Actor
             removeTouching(Barrel.class);
             injured = true;
         }
-        
+
+        if(isTouching(mushroom.class))
+        {
+            removeTouching(mushroom.class);
+            health = true;
+        }
+
         if(Lives == 0)
         {
-               death.play();
-        Greenfoot.delay(110);
-        Greenfoot.setWorld(new endscreen());
-           // Greenfoot.stop();
+            death.play();
+            Greenfoot.delay(110);
+            Greenfoot.setWorld(new endscreen());
+            // Greenfoot.stop();
         }
         if(speed > 0)
         {
@@ -42,8 +49,8 @@ public class Mario extends Actor
                 if(Greenfoot.isKeyDown("up"))
                 {
                     speed = - 20;
-                    GreenfootSound wind = new GreenfootSound("jump.mp3");
-                    wind.play();               
+                    GreenfootSound jump = new GreenfootSound("jump.mp3");
+                    jump.play();               
                 }
             }
         }
@@ -74,14 +81,14 @@ public class Mario extends Actor
 
             setImage("mariopixelCopy.png");
             //getImage().scale(30,30);
-            
+
             while(isTouching(Floor.class))
             {
                 move(1);
-                
+
             } 
-            } 
-        
+        } 
+
         else {
             if(Greenfoot.isKeyDown("right"))
             {
