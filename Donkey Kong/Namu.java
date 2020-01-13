@@ -22,6 +22,7 @@ public class Namu extends Actor
         }
         if(hurt > 3){
             setLocation(600, 500);
+            hurt = 0;
         }
         if(speed > 0)
         {
