@@ -8,7 +8,7 @@ public class Mario extends Actor
     public static boolean health = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
-    GifImage marioRunning = new GifImage("mariorunning.gif");//testing
+    GifImage marioRunning = new GifImage("mariorunning1.gif");//testing
     long lastTime;
     int pause = 10;
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
@@ -79,6 +79,7 @@ public class Mario extends Actor
             }
             } */
 
+            //setImage(marioRunning.getCurrentImage());
             setImage("mariopixelCopy.png");
             //getImage().scale(30,30);
 
