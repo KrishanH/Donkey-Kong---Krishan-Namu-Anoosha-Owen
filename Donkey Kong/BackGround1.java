@@ -26,7 +26,7 @@ public class BackGround1 extends World
         addObject(new red() ,750 ,50);
         addObject(new red() ,730 ,50);
         addObject(new red() ,710 ,50);
-        
+        // owen is cool
         
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
