@@ -9,7 +9,7 @@ public class Mario extends Actor
     public static boolean MarioHealth = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
-    GifImage marioRunning = new GifImage("mariorunning1.gif");//testing
+    GifImage marioRunning = new GifImage("marioRunning1.gif");//testing
     long lastTime;
     int pause = 10;
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
