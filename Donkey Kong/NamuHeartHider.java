@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class heartHider extends Mario
+public class NamuHeartHider extends Namu
 {
     /**
      * Act - do whatever the heartHider wants to do. This method is called whenever
@@ -17,16 +17,16 @@ public class heartHider extends Mario
     public void act() 
     {
 
-        if(MarioInjured == true){
-            MarioInjured = false;
+        if(NamuInjured == true){
+            NamuInjured = false;
         setLocation(getX()+distance,getY());
-            MarioLives--;
+            NamuLives--;
         }//end outer if
         
-        else if(MarioHealth == true){
-            MarioHealth = false;
-                    setLocation(getX()-distance,getY());
-            MarioLives++;
+        else if(NamuHealth == true){
+            NamuHealth = false;
+            setLocation(getX()-distance,getY());
+            NamuLives++;
         }//end else if
     
     }//end act    

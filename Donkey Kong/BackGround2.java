@@ -35,7 +35,7 @@ public class BackGround2 extends World
         addObject(new Floor(), 600+75 , 545);
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
-        Mario.Lives = 3;
+        Mario.MarioLives = 3;
         
     }
 }

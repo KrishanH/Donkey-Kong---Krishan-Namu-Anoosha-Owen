@@ -4,9 +4,9 @@ import greenfoot.*;
 public class Mario extends Actor
 {
     //test
-    public static int Lives = 3;
-    public static boolean injured = false;
-    public static boolean health = false;
+    public static int MarioLives = 3;
+    public static boolean MarioInjured = false;
+    public static boolean MarioHealth = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
     GifImage marioRunning = new GifImage("mariorunning1.gif");//testing
@@ -20,21 +20,21 @@ public class Mario extends Actor
         speed = speed + 1;
         setLocation( getX(), getY() + speed);
         if(this.getY() > 550){
-            Lives = 0;
+            MarioLives = 0;
         }
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            injured = true;
+            MarioInjured = true;
         }
 
         if(isTouching(mushroom.class))
         {
             removeTouching(mushroom.class);
-            health = true;
+            MarioHealth = true;
         }
 
-        if(Lives == 0)
+        if(MarioLives == 0)
         {
             death.play();
             Greenfoot.delay(110);
