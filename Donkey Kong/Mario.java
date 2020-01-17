@@ -3,6 +3,7 @@ import greenfoot.*;
 
 public class Mario extends Actor
 {
+    //test
     public static int Lives = 3;
     public static boolean injured = false;
     public static boolean health = false;
