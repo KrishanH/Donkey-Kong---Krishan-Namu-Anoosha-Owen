@@ -16,6 +16,21 @@ public class lvl2multiplayer extends World
     public lvl2multiplayer()
     {    
         super(800, 600, 1); 
+        
+        //MarioLives
+        addObject(new red() ,750 ,30);
+        addObject(new red() ,720 ,30);
+        addObject(new red() ,690 ,30);
+        addObject(new heartHider() ,505 ,0);
+        
+        //NamuLives
+        addObject(new red() ,750 ,50);
+        addObject(new red() ,720 ,50);
+        addObject(new red() ,690 ,50);
+        addObject(new NamuHeartHider() ,505 ,90);
+        
+        
+        
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor(), 75+350, 155);
@@ -35,9 +50,7 @@ public class lvl2multiplayer extends World
         //addObject(new Floor(), 600+75 , 545);
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
-        addObject(new red() ,750 ,50);
-        addObject(new red() ,700 ,50);
-        addObject(new red() ,650 ,50);
+        
         //addObject(new mushroom() ,700 ,50);
         showText(button.namu +" ", 400, 300);
         if(button.namu == 4){

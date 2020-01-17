@@ -1,12 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Namu extends Actor
 {
+    //variables
     int speed;
-    boolean NamuInjured = false;
-    boolean NamuHealth = false;
-    int NamuLives = 3;
+    public static boolean NamuInjured = false;
+    public static boolean NamuHealth = false;
+    public static int NamuLives = 3;
     private GifImage gif = new GifImage("namuRight.gif");
     private GifImage gif2 = new GifImage("namuLeft.gif");
+    
     public void act() 
     {
         speed = speed + 1;

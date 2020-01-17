@@ -16,16 +16,17 @@ public class BackGround1 extends World
     public BackGround1()
     {    
         super(800, 600, 1); 
-        //Mario's hearts
-        addObject(new red() ,750 ,25);
-        addObject(new red() ,730 ,25);
-        addObject(new red() ,710 ,25);
-        addObject(new heartHider() ,460 ,50);
+        //MarioLives
+        addObject(new red() ,750 ,30);
+        addObject(new red() ,720 ,30);
+        addObject(new red() ,690 ,30);
+        addObject(new heartHider() ,505 ,0);
         
-        //Namu's hearts
+        //NamuLives
         addObject(new red() ,750 ,50);
-        addObject(new red() ,730 ,50);
-        addObject(new red() ,710 ,50);
+        addObject(new red() ,720 ,50);
+        addObject(new red() ,690 ,50);
+        addObject(new NamuHeartHider() ,505 ,90);
         
         
         addObject(new DK(), 75, 90);

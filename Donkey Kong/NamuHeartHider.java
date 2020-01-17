@@ -12,20 +12,20 @@ public class NamuHeartHider extends Namu
      * Act - do whatever the heartHider wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int distance = 25;
+    int Ndistance = 35;
     
     public void act() 
     {
 
-        if(NamuInjured == true){
+        if(NamuInjured == true){            
             NamuInjured = false;
-        setLocation(getX()+distance,getY());
+        setLocation(getX()+Ndistance,getY());
             NamuLives--;
         }//end outer if
         
         else if(NamuHealth == true){
             NamuHealth = false;
-            setLocation(getX()-distance,getY());
+            setLocation(getX()-Ndistance,getY());
             NamuLives++;
         }//end else if
     

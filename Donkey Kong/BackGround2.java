@@ -16,10 +16,12 @@ public class BackGround2 extends World
     public BackGround2()
     {    
         super(800, 600, 1); 
-        addObject(new red() ,750 ,50);
-        addObject(new red() ,700 ,50);
-        addObject(new red() ,650 ,50);
-        addObject(new heartHider() ,460 ,50);
+        //MarioLives
+        addObject(new red() ,750 ,30);
+        addObject(new red() ,720 ,30);
+        addObject(new red() ,690 ,30);
+        addObject(new heartHider() ,505 ,0);
+       
         
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);

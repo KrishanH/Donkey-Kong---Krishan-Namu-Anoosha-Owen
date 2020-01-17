@@ -12,7 +12,7 @@ public class heartHider extends Mario
      * Act - do whatever the heartHider wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int distance = 25;
+    int distance = 35;
     
     public void act() 
     {
