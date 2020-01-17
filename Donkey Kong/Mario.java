@@ -55,6 +55,9 @@ public class Mario extends Actor
                 }
             }
         }
+        while(isTouching(Ladder.class) && Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 1);
+        }
         if(speed <= 0)
         {
             while(isTouching(Floor.class))
