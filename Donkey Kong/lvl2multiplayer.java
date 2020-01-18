@@ -38,6 +38,8 @@ public class lvl2multiplayer extends World
         addObject(new red() ,750 ,50);
         addObject(new red() ,700 ,50);
         addObject(new red() ,650 ,50);
+                Mario.Lives = 3;
+
         //addObject(new mushroom() ,700 ,50);
         showText(button.namu +" ", 400, 300);
         if(button.namu == 4){
