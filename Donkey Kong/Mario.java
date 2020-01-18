@@ -3,12 +3,13 @@ import greenfoot.*;
 
 public class Mario extends Actor
 {
-    public static int Lives = 3;
-    public static boolean injured = false;
-    public static boolean health = false;
+    //test
+    public static int MarioLives = 3;
+    public static boolean MarioInjured = false;
+    public static boolean MarioHealth = false;
     int speed;
     String Marioimage = "mariopixelCopy.png";
-    GifImage marioRunning = new GifImage("mariorunning1.gif");//testing
+    GifImage marioRunning = new GifImage("marioRunning1.gif");//testing
     long lastTime;
     int pause = 10;
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
@@ -19,21 +20,21 @@ public class Mario extends Actor
         speed = speed + 1;
         setLocation( getX(), getY() + speed);
         if(this.getY() > 550){
-            Lives = 0;
+            MarioLives = 0;
         }
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            injured = true;
+            MarioInjured = true;
         }
 
         if(isTouching(mushroom.class))
         {
             removeTouching(mushroom.class);
-            health = true;
+            MarioHealth = true;
         }
 
-        if(Lives == 0)
+        if(MarioLives == 0)
         {
             death.play();
             Greenfoot.delay(110);
@@ -53,6 +54,9 @@ public class Mario extends Actor
                     jump.play();               
                 }
             }
+        }
+        while(isTouching(Ladder.class) && Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 1);
         }
         if(speed <= 0)
         {

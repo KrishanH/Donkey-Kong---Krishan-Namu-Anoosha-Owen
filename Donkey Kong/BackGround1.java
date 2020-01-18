@@ -16,10 +16,18 @@ public class BackGround1 extends World
     public BackGround1()
     {    
         super(800, 600, 1); 
+        //MarioLives
+        addObject(new red() ,750 ,30);
+        addObject(new red() ,720 ,30);
+        addObject(new red() ,690 ,30);
+        addObject(new heartHider() ,505 ,0);
+        
+        //NamuLives
         addObject(new red() ,750 ,50);
-        addObject(new red() ,700 ,50);
-        addObject(new red() ,650 ,50);
-        addObject(new heartHider() ,460 ,50);
+        addObject(new red() ,720 ,50);
+        addObject(new red() ,690 ,50);
+        addObject(new NamuHeartHider() ,505 ,90);
+        
         
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
@@ -35,7 +43,7 @@ public class BackGround1 extends World
         addObject(new Floor(), 600+75 , 545);
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
-        Mario.Lives = 3;
+        Mario.MarioLives = 3;
         showText(button.namu +" ", 400, 300);
         if(button.namu == 4){
             addObject(new Namu(), 600 , 500);

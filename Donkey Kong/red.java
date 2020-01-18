@@ -11,7 +11,7 @@ public class red extends Actor
     public red()
     {    
         GreenfootImage image = getImage();  
-        image.scale(30, 30);
+        image.scale(20, 20);
         setImage(image);
     }
     

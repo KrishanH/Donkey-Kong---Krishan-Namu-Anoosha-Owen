@@ -1,10 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Namu extends Actor
 {
+    //variables
     int speed;
+    public static boolean NamuInjured = false;
+    public static boolean NamuHealth = false;
+    public static int NamuLives = 3;
     private GifImage gif = new GifImage("namuRight.gif");
     private GifImage gif2 = new GifImage("namuLeft.gif");
-    private int hurt = 0;
+    
     public void act() 
     {
         speed = speed + 1;
@@ -12,18 +16,15 @@ public class Namu extends Actor
 
         setImage("namuStand.png");
         if(this.getY() > 550){
-            setLocation(600, 500);
+            NamuLives = 0;
             //getWorld().removeObjects(getWorld().getObjects(Namu.class));
         }
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            hurt++;
+            NamuInjured = true;
         }
-        if(hurt > 3){
-            setLocation(600, 500);
-            hurt = 0;
-        }
+        
         if(speed > 0)
         {
             while(isTouching(Floor.class))
