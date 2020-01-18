@@ -17,8 +17,8 @@ public class player extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
-        addObject(new single(),800/2,600/2);
-        addObject(new multi(),800/2 , 400);
+        addObject(new single(),800/2, 400);
+        addObject(new multi(),800/2 , 500);
         addObject(new title(),800/2 ,100);
         //addObject(choose, 800/2, 200);
     }

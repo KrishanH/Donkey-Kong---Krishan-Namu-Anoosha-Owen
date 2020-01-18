@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class single extends Actor
 {
+    public single()
+    {    
+        GreenfootImage image = getImage();  
+        image.scale(400, 400);
+        setImage(image);
+    }
+    
     /**
      * Act - do whatever the single wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

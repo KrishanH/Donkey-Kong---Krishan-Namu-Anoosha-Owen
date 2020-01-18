@@ -9,6 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class multi extends Actor
 {
     
+    public multi()
+    {    
+        GreenfootImage image = getImage();  
+        image.scale(400, 400);
+        setImage(image);
+    }
     
     /**
      * Act - do whatever the multi wants to do. This method is called whenever
