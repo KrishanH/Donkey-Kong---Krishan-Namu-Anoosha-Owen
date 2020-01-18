@@ -41,19 +41,21 @@ public class lvl2 extends World
         //addObject(new Floor3(), 450+75+150, 350);
         addObject(new Floor2(), 525, 350);
         addObject(new Floor(), 225, 155);
-        
+                addObject(new Floor(), 100, 545);
+                addObject(new Floor(), 150, 545);
+
         addObject(new Floor2(), 800-300-75, 350);
         addObject(new Floor(), 320, 480);
         //addObject(new Floor(), 75, 545);
         //addObject(new Floor(), 150+75 , 545);
         //addObject(new Floor(), 300+75 , 545);
-        addObject(new Floor4(), 450+75 , 545);
+        addObject(new Floor4(), 450+75 , 555);
         //addObject(new Floor(), 600+75 , 545);
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
        
         //addObject(new mushroom() ,700 ,50);
-               Mario.Lives = 3;
+        Mario.MarioLives = 3;
 
         checkForSpawning();
     }

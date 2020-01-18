@@ -39,25 +39,17 @@ public class lvl3 extends World
         addObject(new Floor(), 450+75 , 545);
         addObject(new Floor(), 20 , 545);
         addObject(new Floor(), 750+75 , 545);
-<<<<<<< HEAD
+        //<<<<<<< HEAD
         addObject(new Mario(), 20, 500);
         addObject(new red() ,750 ,50);
         addObject(new red() ,700 ,50);
         addObject(new red() ,650 ,50);
-=======
+        //=======
         addObject(new Mario(), 750, 500);
         
->>>>>>> a2d26f9047e4e7676e00e7a442dda790a44c516c
-        //addObject(new mushroom() ,700 ,50);
-        /*
-
-        if(System.currentTimeMillis() - lastTime > 5000)
-        {
-        lastTime = System.currentTimeMillis();
-        addObject(new mushroom(),200,200);
-        }
-         */
-                Mario.Lives = 3;
+        //>>>>>>> a2d26f9047e4e7676e00e7a442dda790a44c516c
+        
+        Mario.MarioLives = 3;
 
         act();
     }
