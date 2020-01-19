@@ -12,7 +12,7 @@ public class namuIcon extends Namu
     public namuIcon()
     {    
         GreenfootImage image = getImage();  
-        image.scale(20, 20);
+        image.scale(25, 25);
         setImage(image);
     }
     

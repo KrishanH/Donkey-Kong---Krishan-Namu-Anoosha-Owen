@@ -11,7 +11,7 @@ public class marioIcon extends Mario
      public marioIcon()
     {    
         GreenfootImage image = getImage();  
-        image.scale(10, 20);
+        image.scale(15, 25);
         setImage(image);
     }
     

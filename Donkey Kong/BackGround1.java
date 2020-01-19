@@ -21,22 +21,20 @@ public class BackGround1 extends World
         super(800, 600, 1);
         //Heart System:
         //MarioHearts
-        addObject(new red() ,750 ,30);
-        addObject(new red() ,720 ,30);
-        addObject(new red() ,690 ,30);
-        
+        addObject(new red() ,750 ,15);
+        addObject(new red() ,720 ,15);
+        addObject(new red() ,690 ,15);
+        addObject(new heartHider() ,505 ,-15);
+
         //NamuHearts
-        addObject(new red() ,750 ,50);
-        addObject(new red() ,720 ,50);
-        addObject(new red() ,690 ,50);
-        
-        //heartHiders
-        addObject(new heartHider() ,505 ,0);
-        addObject(new NamuHeartHider() ,505 ,90);
+        addObject(new red() ,750 ,40);
+        addObject(new red() ,720 ,40);
+        addObject(new red() ,690 ,40);
+        addObject(new NamuHeartHider() ,505 ,75);
         
         //icons
-        addObject(new marioIcon() ,665 ,30);
-        addObject(new namuIcon() ,665 ,50);
+        addObject(new marioIcon() ,665 ,15);
+        addObject(new namuIcon() ,665 ,40);
         
         
         //------------------------------------
