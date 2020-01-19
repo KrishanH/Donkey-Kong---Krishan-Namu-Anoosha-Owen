@@ -6,6 +6,7 @@ public class Namu extends Actor
     public static boolean NamuInjured = false;
     public static boolean NamuHealth = false;
     public static int NamuLives = 3;
+    GreenfootSound death = new GreenfootSound("deathSound.mp3");
     private GifImage gif = new GifImage("namuRight.gif");
     private GifImage gif2 = new GifImage("namuLeft.gif");
     
@@ -19,6 +20,14 @@ public class Namu extends Actor
             NamuLives = 0;
             //getWorld().removeObjects(getWorld().getObjects(Namu.class));
         }
+        
+        if(NamuLives ==0){
+        death.play();
+        Greenfoot.delay(110);
+        Greenfoot.setWorld(new endscreen());
+        
+        }
+        
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
