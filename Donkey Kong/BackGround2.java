@@ -1,5 +1,7 @@
 import greenfoot.*;
 
+// Level 1 Singleplayer
+
 /**
  * Write a description of class BackGround3 here.
  * 

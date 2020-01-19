@@ -1,5 +1,8 @@
 import greenfoot.*;
 
+// This is Level 1 Multiplayer
+
+
 /**
  * Write a description of class BackGround1 here.
  * 
@@ -15,20 +18,28 @@ public class BackGround1 extends World
      */
     public BackGround1()
     {    
-        super(800, 600, 1); 
-        //MarioLives
+        super(800, 600, 1);
+        //Heart System:
+        //MarioHearts
         addObject(new red() ,750 ,30);
         addObject(new red() ,720 ,30);
         addObject(new red() ,690 ,30);
-        addObject(new heartHider() ,505 ,0);
         
-        //NamuLives
+        //NamuHearts
         addObject(new red() ,750 ,50);
         addObject(new red() ,720 ,50);
         addObject(new red() ,690 ,50);
+        
+        //heartHiders
+        addObject(new heartHider() ,505 ,0);
         addObject(new NamuHeartHider() ,505 ,90);
         
+        //icons
+        addObject(new marioIcon() ,665 ,30);
+        addObject(new namuIcon() ,665 ,50);
         
+        
+        //------------------------------------
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor(), 75+150, 155);
