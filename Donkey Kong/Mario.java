@@ -28,7 +28,7 @@ public class Mario extends Actor
             MarioInjured = true;
         }
 
-        if(isTouching(mushroom.class))
+        if(isTouching(mushroom.class) && MarioLives < 3)
         {
             removeTouching(mushroom.class);
             MarioHealth = true;

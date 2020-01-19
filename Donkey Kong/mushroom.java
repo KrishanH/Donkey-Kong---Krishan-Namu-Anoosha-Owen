@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class mushroom extends Actor
 {
-    private int velocity  = 5;
     //long lastTime;
 
     public mushroom()
@@ -24,10 +23,23 @@ public class mushroom extends Actor
      */
     public void act() 
     {
-        setLocation(getX(), getY() + velocity);
+            int mushVelocity;
+
+            if(isTouching(Floor.class)){
+            mushVelocity = 0;
+        }
+        else{
+            mushVelocity = 5;
+        }
+            
+        setLocation(getX(), getY() + mushVelocity);
         if (getY() >= getWorld().getHeight() - 10) {
             getWorld().removeObject(this);
         }
+        
+        
+        
+        
         /*
         if(System.currentTimeMillis() - lastTime > 5000)
         {

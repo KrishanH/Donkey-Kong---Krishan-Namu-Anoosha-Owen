@@ -34,6 +34,12 @@ public class Namu extends Actor
             NamuInjured = true;
         }
         
+        if(isTouching(mushroom.class) && NamuLives < 3)
+        {
+            removeTouching(mushroom.class);
+            NamuHealth = true;
+        }
+        
         if(speed > 0)
         {
             while(isTouching(Floor.class))
