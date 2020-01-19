@@ -25,7 +25,7 @@ public class lvl2multiplayer extends World
     public lvl2multiplayer()
     {    
         super(800, 600, 1); 
-        //Heart System:
+        //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);
         addObject(new red() ,720 ,15);
@@ -41,10 +41,8 @@ public class lvl2multiplayer extends World
         //icons
         addObject(new marioIcon() ,665 ,15);
         addObject(new namuIcon() ,665 ,40);
-        
-        
+                
         //------------------------------------
-        
         
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
