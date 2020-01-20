@@ -2,22 +2,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Namu extends Actor
 {
     //variables
-    int speed;
-    //public static boolean NamuInjured = false;
-    //public static boolean NamuHealth = false;
-    public static int NamuLives = 3;
-    GreenfootSound death = new GreenfootSound("deathSound.mp3");
-    private GifImage gif = new GifImage("namuRight.gif");
-    private GifImage gif2 = new GifImage("namuLeft.gif");
+    int speed;//speed variables
+    public static int NamuLives = 3;//namus lives
+    GreenfootSound death = new GreenfootSound("deathSound.mp3");//deathsound
+    private GifImage gif = new GifImage("namuRight.gif");//namuright gif
+    private GifImage gif2 = new GifImage("namuLeft.gif");//namuleft gif
 
-    public void act() 
+    public void act() //act
     {
-        speed = speed + 1;
-        setLocation( getX(), getY() + speed);
+        speed = speed + 1;// add speed
+        setLocation( getX(), getY() + speed);//add speed 
 
-        setImage("namuStand.png");
-        if(this.getY() > 550){
-            NamuLives = 0;
+        setImage("namuStand.png");//set image
+        if(this.getY() > 550){//if namu is off the map, he dies
+            NamuLives = 0;//set lives to 0
             //getWorld().removeObjects(getWorld().getObjects(Namu.class));
         }
         while(isTouching(Ladder.class) && Greenfoot.isKeyDown("up")){

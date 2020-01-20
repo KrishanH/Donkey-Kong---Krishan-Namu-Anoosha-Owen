@@ -1,20 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class heartHider here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class heartHider extends Mario
 {
-    /**
-     * Act - do whatever the heartHider wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    int distance = 35;
     
-    public void act() 
+    int distance = 35;//distance
+    
+    public void act() //act 
     {
 
        /* if(MarioInjured == true){
@@ -30,7 +21,7 @@ public class heartHider extends Mario
         }//end else if */
         
         //more efficient 
-        setLocation((505+35*3)-(distance*MarioLives),getY());
+        setLocation((505+35*3)-(distance*MarioLives),getY());//set location
         
     
     }//end act    
