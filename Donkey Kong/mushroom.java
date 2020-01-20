@@ -23,30 +23,28 @@ public class mushroom extends Actor
      */
     public void act() 
     {
-            int mushVelocity;
+        int mushVelocity;
 
-            if(isTouching(Floor.class)){
+        if(isTouching(Floor.class)){
             mushVelocity = 0;
         }
         else{
             mushVelocity = 5;
         }
-            
+
         setLocation(getX(), getY() + mushVelocity);
         if (getY() >= getWorld().getHeight() - 10) {
             getWorld().removeObject(this);
         }
-        
-        
-        
+
         
         /*
         if(System.currentTimeMillis() - lastTime > 5000)
         {
-            lastTime = System.currentTimeMillis();
-            getWorld().addObject(new mushroom(), Greenfoot.getRandomNumber(800), 0);
+        lastTime = System.currentTimeMillis();
+        getWorld().addObject(new mushroom(), Greenfoot.getRandomNumber(800), 0);
         }
-        */
+         */
     }    
 
 }    

@@ -60,10 +60,10 @@ public class lvl3 extends World
          * Constructor for objects of class lvl3.
          * 
          */
-        if(System.currentTimeMillis() - lastTime > 100000)
+        if(System.currentTimeMillis() - lastTime > 10500)
         {
             lastTime = System.currentTimeMillis();
-            addObject(new mushroom(), Greenfoot.getRandomNumber(800), 0);
+            addObject(new mushroom(), Greenfoot.getRandomNumber(750), 0);
         }
 
     }

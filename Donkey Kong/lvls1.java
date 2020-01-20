@@ -10,7 +10,7 @@ public class lvls1 extends Actor
 {
     public lvls1(){
         GreenfootImage image = getImage();  
-        image.scale(80, 80);
+        image.scale(600, 600);
         setImage(image);
     }
 

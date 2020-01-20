@@ -34,8 +34,8 @@ public class lvl2 extends World
         
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
-        addObject(new Floor(), 75+350, 155);
-        addObject(new Floor(), 75+300, 155);
+        //addObject(new Floor(), 75+350, 155);
+        //addObject(new Floor(), 75+300, 155);
         addObject(new Floor(), 75+450, 155);
         addObject(new Ladder(), 478, 243);
         //addObject(new Floor3(), 450+75+150, 350);

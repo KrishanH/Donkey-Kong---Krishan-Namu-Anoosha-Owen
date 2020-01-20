@@ -9,7 +9,7 @@ public class Namu extends Actor
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
     private GifImage gif = new GifImage("namuRight.gif");
     private GifImage gif2 = new GifImage("namuLeft.gif");
-    
+
     public void act() 
     {
         speed = speed + 1;
@@ -20,26 +20,29 @@ public class Namu extends Actor
             NamuLives = 0;
             //getWorld().removeObjects(getWorld().getObjects(Namu.class));
         }
-        
-        if(NamuLives ==0){
-        death.play();
-        Greenfoot.delay(110);
-        Greenfoot.setWorld(new endscreen());
-        
+        while(isTouching(Ladder.class) && Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 1);
         }
-        
+
+        if(NamuLives ==0){
+            death.play();
+            Greenfoot.delay(110);
+            Greenfoot.setWorld(new endscreen());
+
+        }
+
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
             NamuInjured = true;
         }
-        
+
         if(isTouching(mushroom.class) && NamuLives < 3)
         {
             removeTouching(mushroom.class);
             NamuHealth = true;
         }
-        
+
         if(speed > 0)
         {
             while(isTouching(Floor.class))
@@ -90,5 +93,6 @@ public class Namu extends Actor
         {
             speed = 20;
         }
+
     }    
 }

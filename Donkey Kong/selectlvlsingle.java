@@ -17,10 +17,11 @@ public class selectlvlsingle extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
-        addObject(new select(), 800/2 ,300);
+        addObject(new select(), 800/2 ,400);
         addObject(new title(),800/2 ,100);
-        addObject(new lvls1() ,200 , 500);
-        addObject(new lvls2() , 400 , 500);
-        addObject(new lvls3(), 600 , 500);
+        addObject(new lvls1() ,200+70 , 600);
+        addObject(new lvls2() , 400+70 , 600);
+        addObject(new lvls3(), 600+70 , 600);
+        addObject(new back(), 100,100);
     }
 }

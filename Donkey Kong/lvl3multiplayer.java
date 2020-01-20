@@ -9,7 +9,9 @@ import greenfoot.*;
 public class lvl3multiplayer extends World
 {
     long lastTime;
-
+    int minimum = 200;
+    int maximum = 700;
+    int randomRangeValue = minimum + Greenfoot.getRandomNumber( maximum - minimum + 1 );
     public lvl3multiplayer()
     {    
         super(800, 600, 1); 
@@ -25,13 +27,13 @@ public class lvl3multiplayer extends World
         addObject(new red() ,720 ,40);
         addObject(new red() ,690 ,40);
         addObject(new NamuHeartHider() ,505 ,75);
-        
+
         //icons
         addObject(new marioIcon() ,665 ,15);
         addObject(new namuIcon() ,665 ,40);
-                
+
         //------------------------------------
-        
+
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor3(), 675 , 310);
@@ -54,9 +56,9 @@ public class lvl3multiplayer extends World
         //<<<<<<< HEAD       
         //=======
         addObject(new Mario(), 750, 500);
-        
+
         //>>>>>>> a2d26f9047e4e7676e00e7a442dda790a44c516c
-        
+
         Mario.MarioLives = 3;
 
         act();
@@ -72,10 +74,10 @@ public class lvl3multiplayer extends World
          * Constructor for objects of class lvl3multiplayer.
          * 
          */
-        if(System.currentTimeMillis() - lastTime > 100000)
+        if(System.currentTimeMillis() - lastTime > 10500)
         {
             lastTime = System.currentTimeMillis();
-            addObject(new mushroom(), Greenfoot.getRandomNumber(800), 0);
+            addObject(new mushroom(), Greenfoot.getRandomNumber(750), 0);
         }
 
     }

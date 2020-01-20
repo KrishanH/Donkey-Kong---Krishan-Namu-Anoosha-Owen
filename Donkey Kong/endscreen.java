@@ -22,7 +22,7 @@ public class endscreen extends World
         Mario.MarioLives = 3;
         Namu.NamuLives = 3;
         
-        addObject(new back(), 800/2 , 600/2);
+        addObject(new menubutton(), 800/2 , 600/2);
         addObject(new title(),400, 100);
     }
 
