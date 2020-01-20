@@ -26,7 +26,7 @@ public class lvl3 extends World
         addObject(new Floor(), 75+450, 155);
         addObject(new Ladder(), 200, 400);
         addObject(new Floor(), 200, 310);
-        addObject(new Floor2(), 400, 430);
+        addObject(new Floor(), 400, 430);
         addObject(new Floor(), 220, 155);
         addObject(new Floor(), 200, 490);
         addObject(new Floor4(), 300+75 , 310);
