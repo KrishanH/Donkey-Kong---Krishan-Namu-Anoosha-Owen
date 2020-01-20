@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class mushroom extends Actor
 {
+    private int vel=0;
     // getting the mushroom to fall and not fall through floors
     public mushroom()
     {    
@@ -22,16 +23,30 @@ public class mushroom extends Actor
      */
     public void act() 
     {
-        int mushVelocity;
 
-        if(isTouching(Floor.class)){
-            mushVelocity = 0;
+        vel++;
+ if(vel > 0)
+        {
+            while(isTouching(Floor.class))
+            {
+                vel = 0;
+                setLocation(getX(), getY() - 1);
+                
+            }
         }
-        else{
-            mushVelocity = 5;
-        }
+        
+        if(vel <= 0)
+        {
+            while(isTouching(Floor.class))
+            {
+                vel = 0;
+                setLocation(getX(), getY() + 1);
+            }
+        }    
 
-        setLocation(getX(), getY() + mushVelocity);
+
+
+        setLocation(getX(), getY() + vel);
         if (getY() >= getWorld().getHeight() - 10) {
             getWorld().removeObject(this);
         }
