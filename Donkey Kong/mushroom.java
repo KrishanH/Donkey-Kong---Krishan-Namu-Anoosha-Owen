@@ -8,8 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class mushroom extends Actor
 {
-    //long lastTime;
-
+    // getting the mushroom to fall and not fall through floors
     public mushroom()
     {    
         GreenfootImage image = getImage();  
@@ -37,14 +36,6 @@ public class mushroom extends Actor
             getWorld().removeObject(this);
         }
 
-        
-        /*
-        if(System.currentTimeMillis() - lastTime > 5000)
-        {
-        lastTime = System.currentTimeMillis();
-        getWorld().addObject(new mushroom(), Greenfoot.getRandomNumber(800), 0);
-        }
-         */
-    }    
+           }    
 
 }    

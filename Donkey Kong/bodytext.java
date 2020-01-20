@@ -12,7 +12,6 @@ public class bodytext extends Actor
     {
         GreenfootImage img = new GreenfootImage(text.length()*20 , 30 );
         img.setColor(Color.RED);
-        //img.setFont(new Font("OptimusPrinceps", false, false , 20));
         img.setFont(new Font("Courier New", 20));
         img.drawString(text,2,20);
         setImage(img);

@@ -21,7 +21,7 @@ public class back extends button
      */
     public void act() 
     {
-        // Add your action code here.
+        //if button clicked switch world
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new player());

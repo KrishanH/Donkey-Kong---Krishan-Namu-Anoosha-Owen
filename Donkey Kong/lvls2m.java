@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class lvls2m extends lvls1
+public class lvls2m extends Actor
 {
     public lvls2m(){
         GreenfootImage image = getImage();  

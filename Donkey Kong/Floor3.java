@@ -8,6 +8,8 @@ import greenfoot.*;
  */
 public class Floor3 extends Floor
 {
+    //moving floor up and down
+    
     private int down = 2;   
     private int up = -2;  
     private int falling = 1;
@@ -57,14 +59,7 @@ public class Floor3 extends Floor
        if(getY() > 350){
           falling = 0;  
         }
-    //if(getY() < getWorld().getHeight() - 10)
-    //{
-    //falling = 0 ; 
-//}
-    //if(getY() > getWorld().getHeight() - 10)
-    //{
-    //falling = 1; 
-//}
+   
     }
      
 }

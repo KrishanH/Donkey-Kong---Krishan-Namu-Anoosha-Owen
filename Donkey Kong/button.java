@@ -22,7 +22,7 @@ public class button extends Actor
     public static int namu = 4;
     public void act() 
     {
-        // Add your action code here.
+        //if button clicked switch world
         setLocation( getX(), getY());
         if (Greenfoot.mousePressed(this))
         {

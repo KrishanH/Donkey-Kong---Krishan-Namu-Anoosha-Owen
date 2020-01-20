@@ -20,6 +20,5 @@ public class player extends World
         addObject(new single(),800/2, 400);
         addObject(new multi(),800/2 , 500);
         addObject(new title(),800/2 ,100);
-        //addObject(choose, 800/2, 200);
     }
 }

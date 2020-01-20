@@ -27,19 +27,20 @@ public class Mario extends Actor
             removeTouching(Barrel.class);
             MarioInjured = true;
         }
-
+        
+        //add a heart
         if(isTouching(mushroom.class) && MarioLives < 3)
         {
             removeTouching(mushroom.class);
             MarioHealth = true;
         }
-
+        
+        //switch world if lives run out
         if(MarioLives == 0)
         {
             death.play();
             Greenfoot.delay(110);
             Greenfoot.setWorld(new endscreen());
-            // Greenfoot.stop();
         }
         if(speed > 0)
         {
@@ -50,11 +51,13 @@ public class Mario extends Actor
                 if(Greenfoot.isKeyDown("up"))
                 {
                     speed = - 20;
+                    //adding sound
                     GreenfootSound jump = new GreenfootSound("jump.mp3");
                     jump.play();               
                 }
             }
         }
+        //going up the ladder
         while(isTouching(Ladder.class) && Greenfoot.isKeyDown("up")){
             setLocation(getX(), getY() - 1);
         }

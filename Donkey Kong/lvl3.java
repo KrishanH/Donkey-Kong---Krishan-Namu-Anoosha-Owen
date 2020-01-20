@@ -23,18 +23,12 @@ public class lvl3 extends World
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor3(), 675 , 310);
-        //addObject(new Floor(), 75+300, 155);
         addObject(new Floor(), 75+450, 155);
         addObject(new Ladder(), 200, 400);
         addObject(new Floor(), 200, 310);
         addObject(new Floor2(), 400, 430);
         addObject(new Floor(), 220, 155);
         addObject(new Floor(), 200, 490);
-
-        //addObject(new Floor2(), 800-300-75, 350);
-        //addObject(new Floor3(), 220, 450);
-        //addObject(new Floor4(), 75, 545);
-        //addObject(new Floor4(), 150+75 , 545);
         addObject(new Floor4(), 300+75 , 310);
         addObject(new Floor(), 450+75 , 545);
         addObject(new Floor(), 20 , 545);
@@ -49,8 +43,10 @@ public class lvl3 extends World
         
         //>>>>>>> a2d26f9047e4e7676e00e7a442dda790a44c516c
         
+        //setting marios lives
         Mario.MarioLives = 3;
-
+        
+        //calling funtion
         act();
     }
 
@@ -60,6 +56,7 @@ public class lvl3 extends World
          * Constructor for objects of class lvl3.
          * 
          */
+        //adding a mushroom after set time
         if(System.currentTimeMillis() - lastTime > 10500)
         {
             lastTime = System.currentTimeMillis();

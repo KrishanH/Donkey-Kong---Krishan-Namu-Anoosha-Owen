@@ -20,13 +20,15 @@ public class lvls1 extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        //if button clicked switch world
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new BackGround2());
+            
+            //adding sound
             GreenfootSound click = new GreenfootSound("button.mp3");
-                    click.play(); 
-       
+            click.play(); 
+
         }
     }    
 }
