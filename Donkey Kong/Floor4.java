@@ -4,53 +4,53 @@ import greenfoot.*;
 public class Floor4 extends Floor
 {
     //moving floor side to side
-    private int left = 2;   
-    private int right = -2;  
-    private int moving = 1 ;
+    private int left = 2;//left 
+    private int right = -2; //right 
+    private int moving = 1 ;//moving
    
-    public void act() 
+    public void act() //act
     {
         // Add your action code here.
-        checkIfTouching(); 
+        checkIfTouching();//call functions 
         checkIfLeft();      
         checkIfRight();    
     }
 
-    public void moveLeft()
+    public void moveLeft()//,move left
     {
-        setLocation(getX() + left, getY());  
-    }
+        setLocation(getX() + left, getY());//move x to the left  
+    }//end moveleft
 
-    public void moveRight()
+    public void moveRight()//move right
     {
-        setLocation(getX() + right, getY());  
-    }
+        setLocation(getX() + right, getY());  //move x to the right
+    }//end moveright
 
-    public void checkIfLeft()   
+    public void checkIfLeft()//check if it its right 
     {
-        if (moving == 1)
+        if (moving == 1)//if moving is 1
         {
-            moveLeft();
-        }
-    } 
+            moveLeft();//move left
+        }//end if
+    } //end checkifleft
 
-    public void checkIfRight()   
+    public void checkIfRight() //check if its left
     {
-        if (moving == 0)
+        if (moving == 0)//if its left
         {
-            moveRight();
-        }
+            moveRight();//move right
+        }//end if
 
-    }
+    }//end checkifright
 
-    public void checkIfTouching(){
-       if(getX() < 450){
-           moving = 1;
+    public void checkIfTouching(){//function to make floor move
+       if(getX() < 450){//if floor is left
+           moving = 1;//moving is 1
         }
-       if(getX() > 590){
-          moving = 0;  
-        }
+       if(getX() > 590){//if floor is right
+          moving = 0;  //moving is 0
+        }//end if
     
-    }
+    }//end checkiftouching
      
-}
+}//end class

@@ -8,7 +8,7 @@ public class Floor2 extends Floor
     
     public void act() 
     {
-        checkIfTouching(); //call functions
+        //call functions
         checkIfDown();      
         checkIfUp();    
     }//end act
@@ -33,29 +33,13 @@ public class Floor2 extends Floor
 
     public void checkIfUp()   
     {
-        if (falling == 0)
+        if (falling == 0)//if falling is 0
         {
-            moveUp();
-        }
+            moveUp();//move floor up
+        }//end if
 
-    }
+    }//end checkifup
 
-    public void checkIfTouching(){
-       //if(getY() < 155){
-           //falling = 1;
-        //}
-      // if(getY() > 400){
-       //   falling = 0;  
-        //}
-    //if(getY() < getWorld().getHeight() - 10)
-    //{
-    //falling = 0 ; 
-//}
-    //if(getY() > getWorld().getHeight() - 10)
-    //{
-    //falling = 1; 
-//}
-    }
      
-}
+}//end class
  
