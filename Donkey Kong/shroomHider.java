@@ -15,6 +15,5 @@ public class shroomHider extends mushroom
     public void act() 
     {
     
-
     }    
 }

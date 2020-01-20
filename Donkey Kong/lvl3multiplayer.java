@@ -21,9 +21,8 @@ public class lvl3multiplayer extends World//lvl3
         addObject(new Floor(), 450+75 , 545);
         addObject(new Floor(), 20 , 545);
         addObject(new Floor(), 750+75 , 545);
-        act();//call act
         
-        //Life System:
+         //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);
         addObject(new red() ,720 ,15);
@@ -39,7 +38,9 @@ public class lvl3multiplayer extends World//lvl3
         //icons
         addObject(new marioIcon() ,665 ,15);
         addObject(new namuIcon() ,665 ,40);
-
+        
+        
+        
         addObject(new Mario(), 750, 500);
         //setting marios lives
         
@@ -51,6 +52,8 @@ public class lvl3multiplayer extends World//lvl3
             addObject(new Namu(), 600 , 500);
    
         }//end if
+                act();//call act
+
     }//end function
 
     public void act() {
@@ -62,7 +65,9 @@ public class lvl3multiplayer extends World//lvl3
             int xPos = Greenfoot.getRandomNumber(750);//generate random number and store in variable
             
             addObject(new mushroom(), xPos, 0);//add new mushroom with random postion
-            addObject(new shroomHider(), xPos, 0);//hide mushroom at xpos
+            
+           
+
         }//end kf
 
     }//end act
