@@ -1,19 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Coin50 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Coin50 extends Actor
 {
        
-    public void act() 
+    public void act() //act
     {
-        GreenfootImage image = getImage();  
-       image.scale(30, 30);
-        setImage(image);
-        //test stuff
-    }    
-}
+        GreenfootImage image = getImage(); //set image 
+       image.scale(30, 30);//scale image down
+        setImage(image);//set image to scaled version
+        
+    }    //end act
+}//end class
