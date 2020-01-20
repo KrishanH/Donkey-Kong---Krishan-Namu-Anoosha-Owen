@@ -17,7 +17,7 @@ public class heartHider extends Mario
     public void act() 
     {
 
-        if(MarioInjured == true){
+       /* if(MarioInjured == true){
             MarioInjured = false;
         setLocation(getX()+distance,getY());
             MarioLives--;
@@ -27,7 +27,11 @@ public class heartHider extends Mario
             MarioHealth = false;
                     setLocation(getX()-distance,getY());
             MarioLives++;
-        }//end else if
+        }//end else if */
+        
+        //more efficient 
+        setLocation((505+35*3)-(distance*MarioLives),getY());
+        
     
     }//end act    
 }//end class
