@@ -2,20 +2,9 @@ import greenfoot.*;
 
 // This is Level 1 Multiplayer
 
-
-/**
- * Write a description of class BackGround1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class BackGround1 extends World
 {
 
-    /**
-     * Constructor for objects of class BackGround1.
-     * 
-     */
     public BackGround1()
     {    
         super(800, 600, 1);
@@ -56,5 +45,5 @@ public class BackGround1 extends World
         if(button.namu == 4){
             addObject(new Namu(), 600 , 500);
         }
-    }
-}
+    }//end background1
+}//end class

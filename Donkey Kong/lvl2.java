@@ -1,21 +1,12 @@
 import greenfoot.*;
 
-/**
- * Write a description of class lvl2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class lvl2 extends World
 {
-    
-    /**
-     * Constructor for objects of class lvl2.
-     * 
-     */
-    public lvl2()
+   
+    public lvl2()//level 2
     {    
-        super(800, 600, 1); 
+        super(800, 600, 1); //screen size
 
         //MarioLives
         addObject(new red() ,750 ,30);
@@ -41,5 +32,5 @@ public class lvl2 extends World
         //setting marios lives
         Mario.MarioLives = 3;
 
-    }
-}
+    }//end lvl2
+}//end class

@@ -1,21 +1,12 @@
 import greenfoot.*;
 
-/**
- * Write a description of class lvl2multiplayer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class lvl2multiplayer extends World
 {
     
-    /**
-     * Constructor for objects of class lvl2multiplayer.
-     * 
-     */
-    public lvl2multiplayer()
+    public lvl2multiplayer()//lvl2 multiplayer
     {    
-        super(800, 600, 1); 
+        super(800, 600, 1); //screen size
         //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);
@@ -34,7 +25,7 @@ public class lvl2multiplayer extends World
         addObject(new namuIcon() ,665 ,40);
 
         //------------------------------------
-
+        //add dk, mario, and floors
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor(), 75+450, 155);
@@ -56,6 +47,6 @@ public class lvl2multiplayer extends World
         showText(button.namu +" ", 400, 300);
         if(button.namu == 4){
             addObject(new Namu(), 750 , 500);
-        }
-    }
-}
+        }//end if
+    }//end function
+}//end class

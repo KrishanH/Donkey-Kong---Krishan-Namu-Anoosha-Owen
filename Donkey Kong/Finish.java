@@ -1,18 +1,8 @@
 import greenfoot.*;
 
-/**
- * Write a description of class Finish here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Finish extends World
 {
 
-    /**
-     * Constructor for objects of class Finish.
-     * 
-     */
     public Finish()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -26,11 +16,11 @@ public class Finish extends World
         addObject(new Princess(), 300, 253);
         addObject(new Mario(), 400, 255);
         showText("YOU WIN", 400, 100);
-    }
+    }//end finish
 
     public void act(){
-        if(Greenfoot.isKeyDown("up")){
-            Greenfoot.setWorld(new lvl2());
-        }
-    }
-}
+        if(Greenfoot.isKeyDown("up")){//if up is pressed
+            Greenfoot.setWorld(new lvl2());//move to lvl 2
+        }//end if
+    }//end act
+}//end class

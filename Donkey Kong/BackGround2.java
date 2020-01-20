@@ -2,19 +2,9 @@ import greenfoot.*;
 
 // Level 1 Singleplayer
 
-/**
- * Write a description of class BackGround3 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class BackGround2 extends World
 {
 
-    /**
-     * Constructor for objects of class BackGround3.
-     * 
-     */
     public BackGround2()
     {    
         super(800, 600, 1); 
@@ -24,7 +14,7 @@ public class BackGround2 extends World
         addObject(new red() ,690 ,30);
         addObject(new heartHider() ,505 ,0);
        
-        
+        //add dk, floors and mario
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor(), 75+150, 155);
@@ -41,5 +31,5 @@ public class BackGround2 extends World
         addObject(new Mario(), 750, 500);
         Mario.MarioLives = 3;
         
-    }
-}
+    }//end background2
+}//end class
