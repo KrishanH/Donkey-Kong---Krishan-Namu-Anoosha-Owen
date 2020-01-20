@@ -26,7 +26,7 @@ public class button extends Actor
         setLocation( getX(), getY());
         if (Greenfoot.mousePressed(this))
         {
-            Greenfoot.setWorld(new player());
+            Greenfoot.setWorld(new info());
         }
         if(Greenfoot.isKeyDown("n"))
         {
