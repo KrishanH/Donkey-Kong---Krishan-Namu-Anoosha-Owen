@@ -13,7 +13,9 @@ public class BackGround2 extends World
         addObject(new red() ,720 ,30);
         addObject(new red() ,690 ,30);
         addObject(new heartHider() ,505 ,0);
-       
+               addObject(new marioIcon() ,665 ,30);
+
+        
         //add dk, floors and mario
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
