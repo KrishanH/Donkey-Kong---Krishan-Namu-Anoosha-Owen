@@ -10,7 +10,8 @@ public class Mario extends Actor
     int speed;//speed
     public static int points;
     String Marioimage = "mariopixelCopy.png";//marios image
-    private GifImage gif = new GifImage("marioRunning1.gif");//mario running gif, doesnt work
+    private GifImage gif = new GifImage("namuRight.gif");//namuright gif
+    private GifImage gif2 = new GifImage("namuLeft.gif");//namuleft gifprivate GifImage gif = new GifImage("marioRunning1.gif");//mario running gif, doesnt work
     long lastTime;//time
     int pause = 10;//pause
     GreenfootSound death = new GreenfootSound("deathSound.mp3");//death sound
@@ -79,7 +80,8 @@ public class Mario extends Actor
             move(-3);//move left
  
             //setImage(marioRunning.getCurrentImage());// this is for the gif image, if doesnt really work(im not sure why, something wrong with image file)
-            setImage("mariopixelCopy.png");//set marios image
+            //setImage("mariopixelCopy.png");//set marios image
+            setImage(gif.getCurrentImage());
             //getImage().scale(30,30); scale image, dont need this
 
             while(isTouching(Floor.class))//while touching floor
@@ -93,7 +95,8 @@ public class Mario extends Actor
             if(Greenfoot.isKeyDown("right"))
             {
                 move(3);//move right
-                setImage("mariopixel.png");//set image 
+                //setImage("mariopixel.png");//set image 
+                setImage(gif2.getCurrentImage());
                 //setImage(gif.getCurrentImage()); gif image, doesent work well(concept is shown)
                 //getImage().scale(30,30);
                 while(isTouching(Floor.class))//while mario is touching the floor
@@ -101,7 +104,8 @@ public class Mario extends Actor
                     move(-1);//move 
                 }//end while 
             } else{// if mario is not moving
-                setImage("mario-big.png");// set marios image 
+                //setImage("mario-big.png");// set marios image 
+                setImage("namuStand.png");
                 //getImage().scale(30,30);
             }
         }//end else
