@@ -42,6 +42,7 @@ public class BackGround1 extends World
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
         showText(Mario.points +" ", 400, 300);
+        addObject(new Coin50(), 300,400);
         if(button.namu == 4){
             addObject(new Namu(), 600 , 500);
         }
