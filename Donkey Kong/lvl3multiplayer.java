@@ -7,6 +7,8 @@ public class lvl3multiplayer extends World//lvl3
     {    
         super(800, 600, 1);//screen size
         
+        showText(Mario.points +" ", 400, 300);
+        addObject(new Coin50(), 300,400);
         //add dk and floors and ladder
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);

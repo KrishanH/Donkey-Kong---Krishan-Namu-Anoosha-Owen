@@ -9,6 +9,8 @@ public class lvl3 extends World
     {    
         super(800, 600, 1); //screen size
         
+        showText(Mario.points +" ", 400, 300);
+        addObject(new Coin50(), 300,400);
         //MarioLives
         addObject(new red() ,750 ,30);
         addObject(new red() ,720 ,30);

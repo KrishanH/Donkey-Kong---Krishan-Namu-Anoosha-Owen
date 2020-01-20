@@ -33,5 +33,7 @@ public class BackGround2 extends World
         addObject(new Mario(), 750, 500);
         Mario.MarioLives = 3;
         
+        showText(Mario.points +" ", 400, 300);
+        addObject(new Coin50(), 300,400);
     }//end background2
 }//end class

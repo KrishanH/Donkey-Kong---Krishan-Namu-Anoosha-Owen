@@ -29,6 +29,8 @@ public class lvl2 extends World
         addObject(new Floor(), 750+75 , 545);
         addObject(new Mario(), 750, 500);
         
+        showText(Mario.points +" ", 400, 300);
+        addObject(new Coin50(), 300,400);
         //setting marios lives
         Mario.MarioLives = 3;
 
