@@ -1,45 +1,35 @@
 import greenfoot.*;
 
-/**
- * Write a description of class Floor2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Floor2 extends Floor
 {
-    private int down = 5;   
-    private int up = -3;  
-    private int falling = 3;
-    /**
-     * Act - do whatever the Floor2 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    private int down = 5;//downwards 
+    private int up = -3;  //upwards
+    private int falling = 3;//falling
+    
     public void act() 
     {
-        // Add your action code here.
-        checkIfTouching(); 
+        checkIfTouching(); //call functions
         checkIfDown();      
         checkIfUp();    
-    }
+    }//end act
 
-    public void moveDown()
+    public void moveDown()//move floor down
     {
-        setLocation(getX(), getY() +down);  
-    }
+        setLocation(getX(), getY() +down);  //sey y pos to + down
+    }//end movedown
 
-    public void moveUp()
+    public void moveUp()//move floor up
     {
-        setLocation(getX(), getY() +up);  
-    }
+        setLocation(getX(), getY() +up);  //set y to + up
+    }//end move up
 
-    public void checkIfDown()   
+    public void checkIfDown() //  check if floor is down
     {
-        if (falling == 1)
+        if (falling == 1)//if falling is 1
         {
-            moveDown();
-        }
-    } 
+            moveDown();//move floor down
+        }//end if
+    } //end check if down
 
     public void checkIfUp()   
     {

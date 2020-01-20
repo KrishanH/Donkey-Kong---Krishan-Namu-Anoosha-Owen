@@ -6,8 +6,9 @@ public class Mario extends Actor
     
     public static int MarioLives = 3;//marios lives
     public static boolean MarioInjured = false;//boolean for marios hitpoints
-    public static boolean MarioHealth = false;//bbolean for marios health
+    public static boolean MarioHealth = false;//boolean for marios health
     int speed;//speed
+    public static int points;
     String Marioimage = "mariopixelCopy.png";//marios image
     private GifImage gif = new GifImage("marioRunning1.gif");//mario running gif, doesnt work
     long lastTime;//time
@@ -27,7 +28,11 @@ public class Mario extends Actor
             MarioLives--;
             //MarioInjured = true;//set mario injured to true
         }//end if
-        
+        if(isTouching(Coin50.class))
+        {
+            removeTouching(Coin50.class); 
+            points+= 100;
+        }
         //add a heart
         if(isTouching(mushroom.class) && MarioLives < 3)//if mario 
         {

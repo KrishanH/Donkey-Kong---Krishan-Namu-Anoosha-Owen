@@ -36,7 +36,11 @@ public class Namu extends Actor
             removeTouching(Barrel.class);
             NamuLives--;    
         }
-
+                if(isTouching(Coin50.class))
+        {
+            removeTouching(Coin50.class); 
+            Mario.points+= 100;
+        }
         if(isTouching(mushroom.class) && NamuLives < 3)
         {
             removeTouching(mushroom.class);
