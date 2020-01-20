@@ -22,6 +22,7 @@ public class lvl3multiplayer extends World//lvl3
         addObject(new Floor(), 20 , 545);
         addObject(new Floor(), 750+75 , 545);
         act();//call act
+        
         //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);

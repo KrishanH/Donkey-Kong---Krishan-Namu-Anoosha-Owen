@@ -17,7 +17,7 @@ public class NamuHeartHider extends Namu
     public void act() 
     {
 
-       if(NamuInjured == true){            
+      /* if(NamuInjured == true){            
             NamuInjured = false;
         setLocation(getX()+Ndistance,getY());
             NamuLives--;
@@ -27,8 +27,11 @@ public class NamuHeartHider extends Namu
             NamuHealth = false;
             setLocation(getX()-Ndistance,getY());
             NamuLives++;
-        }//end else if
-        
+        }//end else if 
+        */
+               setLocation((505+35*3)-(Ndistance*NamuLives),getY());
+
+       
     
     }//end act    
 }//end class

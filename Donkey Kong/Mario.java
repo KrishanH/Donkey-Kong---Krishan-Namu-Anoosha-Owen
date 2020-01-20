@@ -25,7 +25,8 @@ public class Mario extends Actor
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);//if mario touches the barrel, remove it
-            MarioInjured = true;//set mario injured to true
+            MarioLives--;
+            //MarioInjured = true;//set mario injured to true
         }//end if
         if(isTouching(Coin50.class))
         {
@@ -36,7 +37,7 @@ public class Mario extends Actor
         if(isTouching(mushroom.class) && MarioLives < 3)//if mario 
         {
             removeTouching(mushroom.class);//remove mushroom
-            MarioHealth = true;//set health to true
+            MarioLives++;
         }
         
         //switch world if lives run out

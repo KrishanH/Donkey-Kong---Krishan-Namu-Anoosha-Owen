@@ -3,8 +3,8 @@ public class Namu extends Actor
 {
     //variables
     int speed;
-    public static boolean NamuInjured = false;
-    public static boolean NamuHealth = false;
+    //public static boolean NamuInjured = false;
+    //public static boolean NamuHealth = false;
     public static int NamuLives = 3;
     GreenfootSound death = new GreenfootSound("deathSound.mp3");
     private GifImage gif = new GifImage("namuRight.gif");
@@ -34,7 +34,7 @@ public class Namu extends Actor
         if(isTouching(Barrel.class))
         {
             removeTouching(Barrel.class);
-            NamuInjured = true;
+            NamuLives--;    
         }
                 if(isTouching(Coin50.class))
         {
@@ -44,7 +44,7 @@ public class Namu extends Actor
         if(isTouching(mushroom.class) && NamuLives < 3)
         {
             removeTouching(mushroom.class);
-            NamuHealth = true;
+            NamuLives++;
         }
 
         if(speed > 0)
