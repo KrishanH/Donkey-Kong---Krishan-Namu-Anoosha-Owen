@@ -1,25 +1,20 @@
 import greenfoot.*;
 
-/**
- * Write a description of class lvl3 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class lvl3 extends World
 {
-    long lastTime;
+    long lastTime;//last time function
 
-    public lvl3()
+    public lvl3()//lvl3
     {    
-        super(800, 600, 1); 
+        super(800, 600, 1); //screen size
         
         //MarioLives
         addObject(new red() ,750 ,30);
         addObject(new red() ,720 ,30);
         addObject(new red() ,690 ,30);
         addObject(new heartHider() ,505 ,0);
-        
+        //add dk and floors
         addObject(new DK(), 75, 90);
         addObject(new Floor(), 75, 155);
         addObject(new Floor3(), 675 , 310);
@@ -33,35 +28,30 @@ public class lvl3 extends World
         addObject(new Floor(), 450+75 , 545);
         addObject(new Floor(), 20 , 545);
         addObject(new Floor(), 750+75 , 545);
-        //<<<<<<< HEAD
+        //add mario and hearts
         addObject(new Mario(), 20, 500);
         addObject(new red() ,750 ,50);
         addObject(new red() ,700 ,50);
         addObject(new red() ,650 ,50);
         //=======
         addObject(new Mario(), 750, 500);
-        
-        //>>>>>>> a2d26f9047e4e7676e00e7a442dda790a44c516c
+       
         
         //setting marios lives
         Mario.MarioLives = 3;
         
         //calling funtion
         act();
-    }
+    }//end lvl3
 
     public void act() {
 
-        /**
-         * Constructor for objects of class lvl3.
-         * 
-         */
         //adding a mushroom after set time
         if(System.currentTimeMillis() - lastTime > 10500)
         {
             lastTime = System.currentTimeMillis();
             addObject(new mushroom(), Greenfoot.getRandomNumber(750), 0);
-        }
+        }//end if
 
-    }
-}
+    }//end act
+}//end class
