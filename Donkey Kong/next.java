@@ -18,7 +18,10 @@ public class next extends button
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new player());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+
         }
-        
+
     }    
 }

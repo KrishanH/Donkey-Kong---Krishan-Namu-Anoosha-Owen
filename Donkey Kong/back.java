@@ -9,11 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class back extends button
 {
     public back()
-        {    
-            GreenfootImage image = getImage();  
-            image.scale(320, 320);
-            setImage(image);
-        }
+    {    
+        GreenfootImage image = getImage();  
+        image.scale(320, 320);
+        setImage(image);
+    }
 
     /**
      * Act - do whatever the back wants to do. This method is called whenever
@@ -25,7 +25,10 @@ public class back extends button
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new player());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+
         }
-        
+
     }    
 }

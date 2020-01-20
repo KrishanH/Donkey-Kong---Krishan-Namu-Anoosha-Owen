@@ -24,6 +24,9 @@ public class lvls1 extends Actor
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new BackGround2());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+                    click.play(); 
+       
         }
     }    
 }

@@ -14,7 +14,7 @@ public class button extends Actor
         image.scale(600, 600);
         setImage(image);
     }
-    
+
     /**
      * Act - do whatever the button wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -27,15 +27,17 @@ public class button extends Actor
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new info());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
         }
         if(Greenfoot.isKeyDown("n"))
         {
-            
+
             namu = 1;
             if(Greenfoot.isKeyDown("a"))
             {
-               
-                    namu=2;
+
+                namu=2;
                 if(Greenfoot.isKeyDown("m"))
                 {
                     namu=3;

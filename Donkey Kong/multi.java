@@ -8,14 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class multi extends button
 {
-    
+
     public multi()
     {    
         GreenfootImage image = getImage();  
         image.scale(400, 400);
         setImage(image);
     }
-    
+
     /**
      * Act - do whatever the multi wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,7 +26,10 @@ public class multi extends button
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new selectlvlmulti());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+
         }
-        
+
     }    
 }

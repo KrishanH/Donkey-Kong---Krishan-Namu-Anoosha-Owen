@@ -14,7 +14,7 @@ public class single extends button
         image.scale(400, 400);
         setImage(image);
     }
-    
+
     /**
      * Act - do whatever the single wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,7 +25,10 @@ public class single extends button
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new selectlvlsingle());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+
         }
-        
+
     }    
 }

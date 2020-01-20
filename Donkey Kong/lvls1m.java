@@ -24,6 +24,9 @@ public class lvls1m extends lvls1
         if (Greenfoot.mousePressed(this))
         {
             Greenfoot.setWorld(new BackGround1());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+
         }
     }    
 }
