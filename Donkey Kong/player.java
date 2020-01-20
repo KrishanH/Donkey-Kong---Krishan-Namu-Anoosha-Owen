@@ -10,5 +10,10 @@ public class player extends World
         addObject(new single(),800/2, 400);//add single option
         addObject(new multi(),800/2 , 500);//add multiplayer option
         addObject(new title(),800/2 ,100);//add title
+        if(Greenfoot.isKeyDown("s")){
+               Greenfoot.setWorld(new selectlvlsingle());
+            GreenfootSound click = new GreenfootSound("button.mp3");
+            click.play(); 
+        }
     }//end player
 }//end world
