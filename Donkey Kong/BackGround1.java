@@ -8,7 +8,8 @@ public class BackGround1 extends World
     public BackGround1()
     {    
         super(800, 600, 1);
-        
+        GreenfootSound back = new GreenfootSound("Pepsi.mp3");
+        back.playLoop();
         //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);

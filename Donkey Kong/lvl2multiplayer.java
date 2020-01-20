@@ -4,9 +4,12 @@ import greenfoot.*;
 public class lvl2multiplayer extends World
 {
     
+    
     public lvl2multiplayer()//lvl2 multiplayer
     {    
         super(800, 600, 1); //screen size
+              GreenfootSound back = new GreenfootSound("Pepsi.mp3");
+        back.playLoop();
         //Life System:
         //MarioHearts
         addObject(new red() ,750 ,15);

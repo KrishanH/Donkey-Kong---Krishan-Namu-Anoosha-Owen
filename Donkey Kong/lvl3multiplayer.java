@@ -6,7 +6,8 @@ public class lvl3multiplayer extends World//lvl3
     public lvl3multiplayer()//lvl3 multiplayer
     {    
         super(800, 600, 1);//screen size
-        
+              GreenfootSound back = new GreenfootSound("Pepsi.mp3");
+        back.playLoop();
         showText(Mario.points +" ", 400, 300);
         addObject(new Coin50(), 300,400);
         //add dk and floors and ladder
