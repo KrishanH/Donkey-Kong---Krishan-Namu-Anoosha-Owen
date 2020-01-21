@@ -39,8 +39,8 @@ public class lvl3multiplayer extends World//lvl3
         addObject(new NamuHeartHider() ,505 ,75);
 
         //icons
-        addObject(new marioIcon() ,665 ,15);
-        addObject(new namuIcon() ,665 ,40);
+        //addObject(new marioIcon() ,665 ,15);
+        //addObject(new namuIcon() ,665 ,40);
         
         
         

@@ -24,8 +24,8 @@ public class BackGround1 extends World
         addObject(new NamuHeartHider() ,505 ,75);
         
         //icons
-        addObject(new marioIcon() ,665 ,15);
-        addObject(new namuIcon() ,665 ,40);
+        //addObject(new marioIcon() ,665 ,15);
+        //addObject(new namuIcon() ,665 ,40);
                 
         //------------------------------------
         addObject(new DK(), 75, 90);

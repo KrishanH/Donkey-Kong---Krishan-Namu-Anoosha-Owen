@@ -14,4 +14,10 @@ public class selectlvlmulti extends World
         addObject(new lvls3m(), 600 +70, 600);
         addObject(new back(), 100,100);
     }//end function
+    public void act(){
+        if(Greenfoot.isKeyDown("1")){
+            
+            Greenfoot.setWorld(new BackGround1());
+        }
+    }
 }//end class
